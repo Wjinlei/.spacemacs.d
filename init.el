@@ -52,6 +52,7 @@ values."
      syntax-checking
      ;; version-control
      (go :variables go-backend 'lsp)
+     dap
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
