@@ -313,6 +313,13 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+
+  (define-key evil-normal-state-map (kbd "K") (kbd "5k"))
+  (define-key evil-normal-state-map (kbd "J") (kbd "5j"))
+  (define-key evil-normal-state-map (kbd "H") (kbd "b"))
+  (define-key evil-normal-state-map (kbd "L") (kbd "w"))
+  (define-key evil-normal-state-map (kbd "C-h") (kbd "^"))
+  (define-key evil-normal-state-map (kbd "C-l") (kbd "$"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
