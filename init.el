@@ -51,7 +51,10 @@ values."
      ;; spell-checking
      syntax-checking
      ;; version-control
-     (go :variables go-backend 'lsp)
+     (go :variables go-backend 'lsp
+         :variables go-tab-width 4
+         :variables gofmt-command "goimports"
+         :variables go-use-golangci-lint t)
      dap
      )
    ;; List of additional packages that will be installed without being
