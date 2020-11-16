@@ -51,6 +51,11 @@ values."
      ;; spell-checking
      syntax-checking
      ;; version-control
+     web-beautify
+     prettier
+     (html :variables css-enable-lsp t html-enable-lsp t
+           :variables web-fmt-tool 'web-beautify
+           )
      (go :variables go-backend 'lsp
          :variables go-tab-width 4
          :variables gofmt-command "goimports"
