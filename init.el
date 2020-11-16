@@ -53,9 +53,9 @@ values."
      ;; version-control
      web-beautify
      prettier
-     (html :variables css-enable-lsp t html-enable-lsp t
-           :variables web-fmt-tool 'web-beautify
-           )
+     ;; Vue layer
+     (vue :variables vue-backend 'lsp)
+     ;; Go layer
      (go :variables go-backend 'lsp
          :variables go-tab-width 4
          :variables gofmt-command "goimports"
