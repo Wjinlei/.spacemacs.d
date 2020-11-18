@@ -56,10 +56,7 @@ values."
      ;; Vue layer
      (vue :variables vue-backend 'lsp)
      ;; Go layer
-     (go :variables go-backend 'lsp
-         :variables go-tab-width 4
-         :variables gofmt-command "goimports"
-         :variables go-use-golangci-lint t)
+     (go :variables go-backend 'lsp go-tab-width 4 gofmt-command "goimports")
      dap
      )
    ;; List of additional packages that will be installed without being
