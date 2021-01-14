@@ -40,13 +40,14 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      auto-completion
      ;; better-defaults
+     markdown
+     multiple-cursors
+     org
      emacs-lisp
      git
      ivy
      lsp
-     markdown
-     multiple-cursors
-     org
+
      syntax-checking
 
      ;; youdao
@@ -68,6 +69,12 @@ This function should only modify configuration layer settings."
 
      ;; golang https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Blang/go
      (go :variables go-backend 'lsp go-tab-width 4 gofmt-command "goimports")
+
+     ;; https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Btools/web-beautify
+     web-beautify
+
+     ;; https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Btools/prettier
+     prettier
 
      treemacs)
 
