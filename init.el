@@ -40,7 +40,7 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      auto-completion
      ;; better-defaults
-     markdown
+     (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
      org
      emacs-lisp
