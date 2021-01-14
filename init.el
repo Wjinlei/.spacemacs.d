@@ -40,14 +40,13 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      auto-completion
      ;; better-defaults
-     (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
+     (markdown :variables markdown-live-preview-engine 'vmd)
      org
      emacs-lisp
      git
      ivy
      lsp
-
      syntax-checking
 
      ;; youdao
@@ -555,8 +554,8 @@ before packages are loaded."
   (define-key evil-normal-state-map (kbd "C-j") 'move-text-down)
   (define-key evil-normal-state-map (kbd "C-h") (kbd "^"))
   (define-key evil-normal-state-map (kbd "C-l") (kbd "$"))
-  (define-key evil-normal-state-map (kbd "q") 'delete-window)
-  (define-key evil-normal-state-map (kbd "Q") 'delete-window)
+  (define-key evil-normal-state-map (kbd "q") 'quit-window)
+  (define-key evil-normal-state-map (kbd "Q") 'quit-window)
   (define-key evil-normal-state-map (kbd "w") 'save-buffer)
   (define-key evil-normal-state-map (kbd "W") 'save-buffer)
   )
