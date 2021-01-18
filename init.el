@@ -52,14 +52,6 @@ This function should only modify configuration layer settings."
      ;; youdao
      (chinese :variables chinese-enable-youdao-dict t)
 
-     ;; shell https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Btools/shell
-     (shell :variables
-            shell-default-shell 'ansi-term
-            shell-default-position 'bottom
-            shell-default-height 50
-            shell-default-term-shell "/bin/zsh"
-            multi-term-program "/bin/zsh")
-
      ;; shell-scripts https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Blang/shell-scripts
      (shell-scripts :variables shell-scripts-backend 'lsp)
 
