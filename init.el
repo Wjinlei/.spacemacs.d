@@ -52,12 +52,6 @@ This function should only modify configuration layer settings."
      ;; youdao
      (chinese :variables chinese-enable-youdao-dict t)
 
-     ;; shell-scripts https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Blang/shell-scripts
-     (shell-scripts :variables shell-scripts-backend 'lsp)
-
-     ;; vue https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Bframeworks/vue
-     (vue :variables vue-backend 'lsp)
-
      ;; golang https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Blang/go
      (go :variables go-backend 'lsp go-tab-width 4 gofmt-command "goimports")
 
@@ -557,7 +551,8 @@ This function is called at the very end of Spacemacs initialization."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(package-selected-packages
+   '(evil-cleverparens youdao-dictionary names chinese-word-at-point yasnippet-snippets ws-butler writeroom-mode visual-fill-column winum wgrep web-mode web-beautify volatile-highlights vmd-mode vi-tilde-fringe uuidgen undo-tree treemacs-projectile treemacs-persp treemacs-magit treemacs-icons-dired treemacs-evil toc-org tagedit symon symbol-overlay string-inflection spaceline-all-the-icons memoize all-the-icons spaceline powerline smex smeargle slim-mode scss-mode sass-mode restart-emacs request rainbow-delimiters pyim pyim-basedict xr pug-mode prettier-js popwin persp-mode password-generator paradox pangu-spacing overseer orgit org-superstar org-rich-yank org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download org-cliplink org-brain open-junk-file nodejs-repl nameless move-text mmm-mode markdown-toc magit-svn magit-section magit-gitflow magit-popup macrostep lsp-ui lsp-origami origami lsp-ivy lorem-ipsum livid-mode skewer-mode link-hint json-navigator hierarchy json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc ivy-yasnippet ivy-xref ivy-purpose window-purpose imenu-list ivy-hydra ivy-avy insert-shebang indent-guide impatient-mode simple-httpd hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-make haml-mode google-translate golden-ratio godoctor go-tag go-rename go-impl go-guru go-gen-test go-fill-struct go-eldoc gnuplot gitignore-templates gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md fuzzy forge ghub closql emacsql-sqlite emacsql treepy flycheck-pos-tip pos-tip flycheck-package package-lint flycheck-elsa flycheck-bashate flycheck flx-ido flx fish-mode find-by-pinyin-dired fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-org evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit magit git-commit with-editor transient evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-easymotion smartparens evil-args evil-anzu anzu eval-sexp-fu emr iedit clang-format paredit list-utils emmet-mode elisp-slime-nav editorconfig dumb-jump dired-quick-sort devdocs define-word dap-mode lsp-treemacs bui lsp-mode treemacs cfrs pfuture posframe markdown-mode spinner ht f dash-functional s counsel-projectile projectile pkg-info epl counsel-css counsel swiper ivy company-web web-completion-data company-shell dash company-go go-mode company column-enforce-mode clean-aindent-mode chinese-conv centered-cursor-mode auto-yasnippet yasnippet auto-highlight-symbol auto-compile packed aggressive-indent ace-window ace-pinyin pinyinlib ace-link avy ac-ispell auto-complete popup which-key use-package pcre2el org-plus-contrib hydra lv hybrid-mode font-lock+ evil goto-chg dotenv-mode diminish bind-map bind-key async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
