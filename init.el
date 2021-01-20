@@ -52,6 +52,9 @@ This function should only modify configuration layer settings."
      ;; youdao
      (chinese :variables chinese-enable-youdao-dict t)
 
+     ;; https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Bframeworks/vue
+     (vue :variables vue-backend 'lsp)
+
      ;; golang https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Blang/go
      (go :variables go-backend 'lsp go-tab-width 4 gofmt-command "goimports")
 
